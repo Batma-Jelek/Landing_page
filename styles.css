@@ -1,0 +1,165 @@
+/* RESET & DASAR */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* HEADER & NAVIGATION */
+header {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  border-bottom: 3px solid #ff6600; /* Warna oranye khas Harley */
+}
+
+.header-container {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.header-container h1 {
+  font-size: 2.2rem;
+  color: #ff6600;
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  background-color: #2a2a2a;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0.8rem 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff6600;
+}
+
+/* KONTEN UTAMA & ASIDE LAYOUT (FLEXBOX) */
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  gap: 2rem;
+}
+
+main {
+  flex: 3;
+}
+
+aside {
+  flex: 1;
+}
+
+/* ARTIKEL */
+article {
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+article h2 {
+  color: #ff6600;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.5rem;
+}
+
+article p {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.featured-image {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+/* ASIDE / PROFIL */
+.profile-card {
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.profile-card h2 {
+  font-size: 1.3rem;
+  color: #ff6600;
+  margin-bottom: 1rem;
+}
+
+.profile-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ff6600;
+  margin-bottom: 1rem;
+}
+
+.profile-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.profile-card p {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  color: #cccccc;
+}
+
+/* FOOTER */
+footer {
+  background-color: #1f1f1f;
+  color: #888888;
+  text-align: center;
+  padding: 1.2rem;
+  margin-top: 2rem;
+  border-top: 1px solid #333;
+}
+
+/* MEDIA QUERY (RESPONSIFITAS LAYAR HP) */
+@media screen and (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .header-container h1 {
+    font-size: 1.8rem;
+  }
+}
